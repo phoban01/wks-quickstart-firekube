@@ -6,7 +6,7 @@ machines:
   spec:
     backend: ignite
     ignite:
-      cpus: 1
+      cpus: 2
       diskSize: 5GB
       kernel: weaveworks/ignite-kernel:4.19.47
       memory: 1GB
