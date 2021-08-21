@@ -37,14 +37,14 @@ items:
             image: weaveworks/ignite-centos:firekube-pre3
             ip: ""
             ports:
-            - guest: 30080
-              host: 30081
             - guest: 22
               host: 2223
             - guest: 6443
               host: 6444
             - guest: 30443
               host: 30444
+            - guest: 30080
+              host: 30081
             spec:
               backend: ignite
               ignite:
