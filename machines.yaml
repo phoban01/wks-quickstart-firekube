@@ -13,6 +13,7 @@ items:
         apiVersion: baremetalproviderspec/v1alpha1
         kind: BareMetalMachineProviderSpec
         private:
+          address: 10.61.0.14
           port: 22
         public:
           address: 127.0.0.1
@@ -30,40 +31,7 @@ items:
         apiVersion: baremetalproviderspec/v1alpha1
         kind: BareMetalMachineProviderSpec
         private:
-          address:
-            cmd: ""
-            container: firekube-node1
-            hostname: node1
-            image: weaveworks/ignite-centos:firekube-pre3
-            ip: ""
-            ports:
-            - guest: 22
-              host: 2223
-            - guest: 6443
-              host: 6444
-            - guest: 30443
-              host: 30444
-            - guest: 30080
-              host: 30081
-            spec:
-              backend: ignite
-              ignite:
-                cpus: 2
-                diskSize: 5GB
-                kernel: weaveworks/ignite-kernel:4.19.47
-                memory: 1GB
-              image: weaveworks/ignite-centos:firekube-pre3
-              name: node%d
-              portMappings:
-              - containerPort: 22
-                hostPort: 2222
-              - containerPort: 6443
-                hostPort: 6443
-              - containerPort: 30443
-                hostPort: 30443
-              - containerPort: 30080
-                hostPort: 30080
-            state: Running
+          address: 10.61.0.15
           port: 22
         public:
           address: 127.0.0.1
